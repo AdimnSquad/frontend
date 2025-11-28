@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
           // ✅ Langsung set carImage setelah data berhasil diambil
           if (carData.length > 0 && carData[0].cover) {
-            setCarImage(`http://localhost:8000/storage/${carData[0].cover}`);
+            setCarImage(`http://202.10.35.18:8000/storage/${carData[0].cover}`);
           }
         } else {
           console.error("Response kosong atau tidak sesuai:", response);
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
   // ✅ Fungsi ubah gambar berdasarkan warna
   const changeCarColor = (newSrc: string) => {
     if (!newSrc) return;
-    setCarImage(`http://localhost:8000/storage/${newSrc}`);
+    setCarImage(`http://202.10.35.18:8000/storage/${newSrc}`);
   };
 
   return (
@@ -303,7 +303,7 @@ const Home: React.FC = () => {
             <SwiperSlide key={t.id} className="text-center">
               <div className="ratio ratio-1x1 d-flex justify-content-center align-items-center">
                 <img
-                  src={`http://localhost:8000/storage/${t.image}`}
+                  src={`http://202.10.35.18:8000/storage/${t.image}`}
                   alt={`Testimoni ${t.name}`}
                   className="img-fluid rounded-3 shadow object-fit-cover"
                   style={{

@@ -24,7 +24,7 @@ const Details: React.FC = () => {
         setMobil(data);
 
         if (data.cover) {
-          setCarImage(`http://localhost:8000/storage/${data.cover}`);
+          setCarImage(`http://202.10.35.18:8000/storage/${data.cover}`);
         }
       } catch (error) {
         console.error("Gagal mengambil detail mobil:", error);
@@ -36,7 +36,7 @@ const Details: React.FC = () => {
 
   // Ganti gambar sesuai warna
   const changeCarColor = (newSrc: string) => {
-    setCarImage(`http://localhost:8000/storage/${newSrc}`);
+    setCarImage(`http://202.10.35.18:8000/storage/${newSrc}`);
   };
 
   if (!mobil) {
@@ -165,7 +165,7 @@ const Details: React.FC = () => {
                     <SwiperSlide key={index}>
                       <div className="text-center">
                         <img
-                          src={`http://localhost:8000/storage/${item.image}`}
+                          src={`http://202.10.35.18:8000/storage/${item.image}`}
                           className="img-fluid rounded"
                           alt={item.name}
                         />
@@ -201,7 +201,7 @@ const Details: React.FC = () => {
                     <SwiperSlide key={index}>
                       <div className="text-center">
                         <img
-                          src={`http://localhost:8000/storage/${item.image}`}
+                          src={`http://202.10.35.18:8000/storage/${item.image}`}
                           className="img-fluid rounded"
                           alt={item.name}
                         />

@@ -49,7 +49,7 @@ const List: React.FC = () => {
                         New
                       </span>
                       <Link to={ `/detail/${mobil.slug}`}><img
-                        src={`http://localhost:8000/storage/${mobil.cover}`}
+                        src={`http://202.10.35.18:8000/storage/${mobil.cover}`}
                         alt={mobil.name}
                         className="img-fluid rounded-top p-3"
                       /></Link>
