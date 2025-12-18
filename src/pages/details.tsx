@@ -202,7 +202,7 @@ const Details: React.FC = () => {
                     <SwiperSlide key={index}>
                       <div className="text-center">
                         <img
-                          src={`http://202.10.35.18:8000/storage/${item.image}`}
+                          src={`https://api-geely.and-dev.my.id/storage/${item.image}`}
                           className="img-fluid rounded"
                           alt={item.name}
                         />

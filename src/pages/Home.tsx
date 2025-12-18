@@ -303,7 +303,7 @@ const Home: React.FC = () => {
             <SwiperSlide key={t.id} className="text-center">
               <div className="ratio ratio-1x1 d-flex justify-content-center align-items-center">
                 <img
-                  src={`http://202.10.35.18:8000/storage/${t.image}`}
+                  src={`https://api-geely.and-dev.my.id/storage/${t.image}`}
                   alt={`Testimoni ${t.name}`}
                   className="img-fluid rounded-3 shadow object-fit-cover"
                   style={{
