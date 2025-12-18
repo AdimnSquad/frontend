@@ -40,7 +40,7 @@ const Home: React.FC = () => {
 
           // ✅ Langsung set carImage setelah data berhasil diambil
           if (carData.length > 0 && carData[0].cover) {
-            setCarImage(`http://202.10.35.18:8000/storage/${carData[0].cover}`);
+            setCarImage(`https://api-geely.and-dev.my.id/storage/${carData[0].cover}`);
           }
         } else {
           console.error("Response kosong atau tidak sesuai:", response);
