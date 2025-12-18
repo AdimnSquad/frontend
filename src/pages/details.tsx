@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { CarService } from "../services/carServices";
 import type { Car } from "../types/Car";
+import CommentSection from "../components/CommentSection";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -256,7 +257,9 @@ const Details: React.FC = () => {
           </div>
         </div>
       </section>
-
+      <div className="mb-3">
+        <CommentSection />
+      </div>
       <SectionFooterImage />
     </>
   );
