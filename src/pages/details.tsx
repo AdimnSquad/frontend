@@ -25,7 +25,7 @@ const Details: React.FC = () => {
         setMobil(data);
 
         if (data.cover) {
-          setCarImage(`http://202.10.35.18:8000/storage/${data.cover}`);
+          setCarImage(`https://api-geely.and-dev.my.id/storage/${data.cover}`);
         }
       } catch (error) {
         console.error("Gagal mengambil detail mobil:", error);
@@ -37,7 +37,7 @@ const Details: React.FC = () => {
 
   // Ganti gambar sesuai warna
   const changeCarColor = (newSrc: string) => {
-    setCarImage(`http://202.10.35.18:8000/storage/${newSrc}`);
+    setCarImage(`https://api-geely.and-dev.my.id/storage/${newSrc}`);
   };
 
   if (!mobil) {
@@ -166,7 +166,7 @@ const Details: React.FC = () => {
                     <SwiperSlide key={index}>
                       <div className="text-center">
                         <img
-                          src={`http://202.10.35.18:8000/storage/${item.image}`}
+                          src={`https://api-geely.and-dev.my.id/storage/${item.image}`}
                           className="img-fluid rounded"
                           alt={item.name}
                         />
